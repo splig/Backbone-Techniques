@@ -10,7 +10,7 @@ Backbone models and collections provide a hook called parse, which takes a singl
 You can use this hook to modify data then return the response.  But what if you have complicated transforms that need
 to occur?  Or what if you don't want bloated parse functions?  One approach you could take is to define a set of 
 pipes or filters.  The pipes in this case are going to be functions that take a response parameter, and return the modified output. 
-You can execute the pipes against the response sequentially by using a method such as underscore's combine function.
+You can execute the pipes against the response sequentially by using a method such as underscore's compose function.
 
 
 ```javascript
