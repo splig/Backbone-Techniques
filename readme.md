@@ -19,7 +19,7 @@ var pipes = {
                      response.pipes = ['hello from pipe1'];
                      return response;
             },
-            pipe1 : function(response){
+            pipe2 : function(response){
                      response.pipes.push('hello from pipe2');
                      return response;
             }
