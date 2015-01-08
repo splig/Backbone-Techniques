@@ -25,7 +25,7 @@ var pipes = {
             }
 };
 var PipedModel = Backbone.model.extend({
-            parse : _.combine(pipe1,pipe2)
+            parse : _.compose(pipes.pipe1, pipes.pipe2)
             
             });
 
